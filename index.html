@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link href="css/style.css" rel="stylesheet">
     
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 
   </head>
 
@@ -38,7 +40,7 @@
       <p class="lead">Something wonderful is happening behind. Stay tuned!</p>
     </div> -->
     <div class="container-fluid px-0 rel">
-      <div class="home-banner">
+      <div class="home-banner" style="background: url('img/pattern.png');">
         <div class="banner_grad w-100 h-100">
           <div class="search_form">
               <div class="form-group wd_35">
@@ -48,19 +50,36 @@
           </div>
         </div>
       </div>
-      <!-- Set up your HTML -->
-      <div class="owl-carousel">
-        <div> 1 </div>
-        <div> 2 </div>
-        <div> 3 </div>
-        <div> 4 </div>
-        <div> 5 </div>
-        <div> 6 </div>
-        <div> 7 </div>
-      </div>
     </div>
 
+    <div class="container-fluid most-popular-box">
+      <!-- TItle -->
+      <h1 class="text-center heading-text" style="padding: 10px">Most Popular</h1>
+      <!-- Carousel -->
+      <div class="owl-carousel owl-theme">
+        <!-- Items -->
+        <div class="item countdown-block">
+          <img src="img/spring-countdown-600-1.jpg" alt="1"/>
+        </div>
+
+        <div class="item countdown-block">
+          <img src="img/spring-countdown-600-1.jpg" alt="1"/>
+        </div>
+  
+        <div class="item countdown-block">
+          <img src="img/spring-countdown-600-1.jpg" alt="1"/>
+        </div>
+
+        <div class="item countdown-block">
+          <img src="img/spring-countdown-600-1.jpg" alt="1"/>
+        </div>
+      </div>
+
+    </div>
+
+
     <div class="container">
+
       <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
           <div class="col-12 col-md">
@@ -120,7 +139,12 @@
     </script>
     <script>
       $(document).ready(function(){ 
-        $(".owl-carousel").owlCarousel(); 
+        $(".owl-carousel").owlCarousel({
+          stagePadding: 10,
+          margin:10,
+          items: 4,
+          dots: true
+        }); 
       });
     </script>
   </body>
