@@ -161,32 +161,64 @@ html {
   color: white;
   align-items: flex-end;
   height: 100%;
-  box-shadow: inset 0px -120px 50px 0px rgba(0, 0, 0, 0.5); 
+  /* box-shadow: inset 0px -120px 50px 0px rgba(0, 0, 0, 0.5); 
+   */
+   box-shadow: inset 0px -120px 50px 0px rgba(0, 0, 0, 0.55);
   font-family: 'Saira Condensed',sans-serif;
+
+  padding-bottom: 5px;
 }
 .cd_text_img {
   font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 .cd_num_img {
   line-height: 35px;
+  font-weight: 600;
+  font-size: 45px;
 }
 .cd_name_img {
   position: absolute;
-  top: 40%;
+  top: 27%;
   right : 0;
   left: 0;
   padding: 0 15px;
   text-align: center;
   color: white;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   font-family: 'Saira Condensed',sans-serif;
   z-index: 1;
   text-transform: uppercase;
+}
+.cd_name_2_img {
+  font-weight: 200;
+  position: absolute;  
+  font-size: 25px; 
+  color: white;
+  top: 43%;
+  right : 0;
+  left: 0;
+  font-family: 'Saira Condensed',sans-serif;  
+  text-align: center;
+  text-transform: uppercase;
+  
 }
 .carousel_shadow {
   box-shadow: 0px 3px 10px 3px #d4d4d4;
 }
 
+.block-image {
+  height: 100%;
+  width: 100%;
+}
 
+.countdown-block {
+  height: 18em;
+  transition: ease-in-out 400ms; /*animation*/
+}
 
+.countdown-block:hover {
+  box-shadow: inset 0px 1px 5px 145px rgba(0, 0, 0, 0.5);
+}
