@@ -128,3 +128,7 @@
 .countdown-block:hover {
   box-shadow: inset 0px 1px 5px 145px rgba(0, 0, 0, 0.5);
 }
+.bg_img_clock {
+  background-image: url('../img/clk_bg1.png');
+  background-size: cover;
+}
