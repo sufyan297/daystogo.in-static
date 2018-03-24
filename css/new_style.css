@@ -8,7 +8,9 @@ body {
 /*
  * Custom translucent site header
  */
-
+ .rel {
+   position: absolute;
+ }
  .site-header {
   background-color: rgba(0, 0, 0, .75);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -97,13 +99,13 @@ body {
   text-align: center;
   color: white;
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 600;
   font-family: 'Saira Condensed',sans-serif;
   z-index: 1;
   text-transform: uppercase;
 }
 .cd_name_2_img {
-  font-weight: 200;
+  font-weight: 400;
   position: absolute;  
   font-size: 25px; 
   color: white;
@@ -151,4 +153,29 @@ body {
 }
 .recently-added-block {
   background-color: white;
+}
+
+.more_btn {
+  /* positon: absolute; */
+  border-bottom: 3px solid #ff0000;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #669999;
+  font-size: 21px;
+  padding-bottom : 2px;
+  text-decoration: none !important;
+}
+.more_btn:hover {
+  /* positon: absolute; */
+  border-bottom: 5px solid #ff0000;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #669999;
+  font-size: 21px;
+  padding-bottom: 2px;
+  text-decoration: none !important;
+}
+.pg_title {
+  color: #165870;
+
 }
